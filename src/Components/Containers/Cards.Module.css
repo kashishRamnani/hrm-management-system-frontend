@@ -1,0 +1,89 @@
+.card-title {
+    font-size: clamp(16.5px, 1vw, 16.5px);
+    color: #333;
+}
+
+.card-value {
+    font-size: clamp(25px, 3vw, 32px);
+    color: #9603a7;
+}
+
+.card-description {
+    font-size: clamp(14px, 1vw, 14px);
+    color: #666;
+}
+
+.card-container {
+    background-color: #f0e0f5 ;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    box-shadow: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 155px;
+}
+
+
+
+/* Doughnut Chart Styling */
+.doughnut-wrapper {
+    position: relative;
+    max-width: clamp(160px, 35vw, 180px);
+    height: clamp(80px, 35vw, 100px);
+    margin: 0 auto;
+}
+
+.doughnut-overlay {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333;
+}
+
+.doughnut-overlay h3 {
+    font-size: clamp(30px, 1vw, 32px);
+    color: #9603a7 ;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.doughnut-overlay p {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+}
+
+.job-description {
+    position: relative;
+    font-size: clamp(14px, 0.5vw, 14px);
+    padding-top: 35px;
+
+}
+
+/* Row Styling for Equal Heights */
+.row.gy-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.row.gy-2>.col {
+    display: flex;
+}
+
+.row.gy-2>.col>.card-container {
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        height: auto;
+
+    }
+}

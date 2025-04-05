@@ -1,0 +1,38 @@
+.jobtable-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0;
+    padding: 5px;
+    background-color: #f0e0f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    height: 390px;
+    overflow: hidden;
+    position: relative;
+}
+
+.description-box {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.table-container {
+    max-height: 340px;
+    overflow: auto;
+
+    scrollbar-width: thin;
+
+}
+
+.table-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #e6e5e5;
+}
